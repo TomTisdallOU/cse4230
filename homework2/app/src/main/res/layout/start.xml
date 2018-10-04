@@ -6,6 +6,7 @@
     android:background="#211c32">
 
     <!-- My first checkin -->
+    <!-- second check in -->
     <Button
         android:id="@+id/sign_up"
         android:layout_width="350dp"
