@@ -7,33 +7,54 @@
 
     <Button
         android:id="@+id/sign_up"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="#01bad4"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fb_button"
+        android:textAlignment="center"
         android:text="@string/signup"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_above="@id/facebookButton"
+        android:layout_margin="10dp"
+        />
 
     <Button
         android:id="@+id/facebookButton"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
-        android:background="#16559f"
+        android:background="@drawable/signup_button"
         android:fontFamily="@font/fjallaone_regular"
         android:text="SIGN IN WITH FACEBOOK"
-        android:textColor="#FFFDFFFF">
+        android:textAlignment="textStart"
+        android:drawablePadding="10dp"
+        android:layout_above="@id/have_account"
+        android:textColor="#FFFDFFFF"
+        android:drawableStart="@drawable/facebook_icon"
+        android:paddingLeft="90dp">
 
     </Button>
-    <ImageView
-        android:id="@+id/imageView3"
 
+    <TextView
+        android:id="@+id/have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        app:srcCompat="@drawable/facebook_icon" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/sign_in"
+        android:textColor="#FFFDFFFF"
+        android:fontFamily="@font/avenir_lt_std_35_light_5169"
+        android:text="Already have account?"
+        />
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFDFFFF"
+        android:fontFamily="@font/avenir_lt_std_35_light_5169"
+        android:text="Please Sign in"
+        android:layout_alignParentBottom="true"
+        />
 
 
 
