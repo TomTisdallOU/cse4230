@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#211c32">
 
+    <!-- My first checkin -->
     <Button
         android:id="@+id/sign_up"
         android:layout_width="350dp"
