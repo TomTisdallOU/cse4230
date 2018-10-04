@@ -7,6 +7,7 @@
 
     <!-- My first checkin -->
     <!-- second check in -->
+    <!-- Third check in! -->
     <Button
         android:id="@+id/sign_up"
         android:layout_width="350dp"
