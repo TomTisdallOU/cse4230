@@ -21,37 +21,35 @@
         />
 
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/elipse_for_start_page_image"
+        android:layout_above="@id/sign_up"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="150dp"
+        android:adjustViewBounds="true"
 
         android:background="#211c32"
-        android:layout_above="@id/sign_up"
-        android:layout_alignParentStart="true"
-
         android:maxHeight="200dp"
         android:maxWidth="200dp"
         android:scaleType="fitXY"
-        android:adjustViewBounds="true"
 
-        android:layout_marginBottom="50dp"/>
+        android:src="@drawable/elipse_for_start_page_image" />
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sandwich"
-        android:layout_above="@id/sign_up"
+        android:layout_height="239dp"
+
+
         android:layout_alignParentStart="true"
-
-
-
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:adjustViewBounds="true"
         android:maxHeight="225dp"
         android:maxWidth="225dp"
         android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-
-        android:layout_marginBottom="50dp"/>
+        android:src="@drawable/sandwich" />
 
     <ImageView
         android:id="@+id/logo"
@@ -80,21 +78,58 @@
         android:layout_centerHorizontal="true"
         />
 
+    <EditText
+        android:id="@+id/editText8"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/editText9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/edit_border_text_2"
+        android:drawableLeft="@drawable/mail_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="left|center"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Email"
+        android:textColor="#FFA7AAAB"
+        android:textSize="14sp"
+        android:transformPivotX="0dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/lock_icon"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:gravity="left|center"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:text="Password"
+        android:textColor="#FFA7AAAB"
+        android:textSize="14sp" />
+
     <Button
         android:id="@+id/sign_up"
         android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:background="@drawable/fb_button"
-        android:textAlignment="center"
-        android:text="SIGN IN"
-        android:textColor="#FFFFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/have_account"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/fb_button"
         android:fontFamily="@font/fjallaone_regular"
-        android:textSize="16dp"
+        android:text="SIGN IN"
+        android:textAlignment="center"
 
-        />
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp" />
 
 
     <TextView
@@ -143,14 +178,4 @@
             />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_below="@+id/editText4"
-        android:layout_marginTop="-248dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 </RelativeLayout>
