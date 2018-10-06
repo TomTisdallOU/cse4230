@@ -171,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/please"
             android:fontFamily="@font/avenir_lt_std_35_light_5169"
-            android:text="Sign In"
+            android:text="Sign Up"
             android:textColor="#FFFDFFFF"
             android:textStyle="bold"
 
