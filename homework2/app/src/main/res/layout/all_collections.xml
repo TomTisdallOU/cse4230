@@ -52,13 +52,78 @@
     </TableRow>
 
     <TableRow android:layout_height="54dp">
-        <ImageView
+
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/plateswithstrawberries" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/strawberriesImage"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/plateswithstrawberries" />
+
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_above="@+id/myImageViewText2"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="HAPPY B-DAY COLLECTION"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myImageViewText2"
+                android:layout_width="350dp"
+                android:layout_height="77dp"
+                android:layout_alignBottom="@+id/strawberriesImage"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="A collection of recipes for the week ending"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
     </TableRow>
 
     <TableRow android:layout_height="184dp">
