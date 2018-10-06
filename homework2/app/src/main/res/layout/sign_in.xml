@@ -1,6 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211c32">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_soup"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        android:maxHeight="225dp"
+        android:maxWidth="225dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/elipse_for_start_page_image"
+
+        android:background="#211c32"
+        android:layout_above="@id/sign_up"
+        android:layout_alignParentStart="true"
+
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        android:layout_marginBottom="50dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sandwich"
+        android:layout_above="@id/sign_up"
+        android:layout_alignParentStart="true"
+
+
+
+        android:maxHeight="225dp"
+        android:maxWidth="225dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        android:layout_marginBottom="50dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLAVOURITE"
+        android:fontFamily="@font/fjallaone_regular"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="#FFFFFFFF"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fb_button"
+        android:textAlignment="center"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/have_account"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/fjallaone_regular"
+        android:textSize="16dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_please_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/avenir_lt_std_35_light_5169"
+        android:text="Still not registered?"
+        android:textColor="#FFFFFFFF" />
+    <LinearLayout
+        android:id="@+id/linear_please_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/please"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFDFFFF"
+            android:fontFamily="@font/avenir_lt_std_35_light_5169"
+            android:text="Please "
+
+            />
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/please"
+            android:fontFamily="@font/avenir_lt_std_35_light_5169"
+            android:text="Sign In"
+            android:textColor="#FFFDFFFF"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="-248dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+</RelativeLayout>
