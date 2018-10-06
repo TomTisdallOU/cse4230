@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211c32">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="190dp"
+        android:maxHeight="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_soup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="104dp"
+
+        android:adjustViewBounds="true"
+        android:background="#211c32"
+        android:maxWidth="190dp"
+        android:maxHeight="190dp"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/Ellipse2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:adjustViewBounds="true"
+
+        android:maxWidth="190dp"
+        android:maxHeight="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sandwich2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:adjustViewBounds="true"
+        android:maxWidth="110dp"
+        android:maxHeight="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="FLAVOURITE"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/facebookButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/fb_button"
+        android:fontFamily="@font/fjallaone_regular"
+        android:text="@string/signup"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/have_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+
+        android:layout_above="@id/have_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signup_button"
+        android:drawableStart="@drawable/facebook_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/fjallaone_regular"
+        android:paddingLeft="90dp"
+        android:text="SIGN IN WITH FACEBOOK"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_please_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/avenir_lt_std_35_light_5169"
+        android:text="Or you still can"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/facebookButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_please_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="265dp"/>
 
 </android.support.constraint.ConstraintLayout>
