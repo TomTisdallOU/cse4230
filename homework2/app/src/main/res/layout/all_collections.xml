@@ -43,6 +43,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:contentDescription="Search Icon"
+                    android:paddingRight="8dp"
                     android:scaleType="fitEnd"
                     android:src="@drawable/search_icon" />
             </RelativeLayout>
@@ -71,7 +72,7 @@
             <TextView
                 android:id="@+id/myImageViewText"
                 android:layout_width="400dp"
-                android:layout_height="48dp"
+                android:layout_height="98dp"
                 android:layout_above="@+id/myImageViewText2"
                 android:layout_alignParentBottom="false"
                 android:layout_alignParentEnd="false"
@@ -83,7 +84,7 @@
                 android:layout_centerHorizontal="false"
                 android:layout_centerInParent="false"
                 android:layout_centerVertical="false"
-                android:layout_marginBottom="1dp"
+                android:layout_marginBottom="-48dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginLeft="1dp"
                 android:layout_marginRight="1dp"
@@ -153,7 +154,7 @@
                 <TextView
                     android:id="@+id/myImageViewText3"
                     android:layout_width="match_parent"
-                    android:layout_height="118dp"
+                    android:layout_height="129dp"
                     android:layout_alignBottom="@+id/imageView3"
                     android:layout_alignParentBottom="false"
                     android:layout_alignParentEnd="false"
@@ -168,12 +169,13 @@
                     android:gravity="center"
                     android:text="COOK RECIPES TO SATISFY"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/myImageViewText4"
                     android:layout_width="350dp"
-                    android:layout_height="89dp"
+                    android:layout_height="101dp"
                     android:layout_alignBottom="@+id/myImageViewText3"
                     android:layout_alignParentBottom="false"
                     android:layout_alignParentEnd="false"
@@ -188,7 +190,8 @@
                     android:gravity="center"
                     android:text="YOUR SWEET TOOTH"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/myImageViewText5"
@@ -227,17 +230,103 @@
                     android:textSize="12sp" />
             </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_height="175dp"
-                android:layout_weight="0.5"
-                android:adjustViewBounds="true"
-                android:paddingBottom="5dp"
-                android:paddingLeft="3dp"
-                android:paddingRight="7dp"
-                android:paddingTop="7dp"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/picturewithstraws" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/picturewithstraws" />
+
+
+                <TextView
+                    android:id="@+id/myImageViewText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="129dp"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="false"
+                    android:gravity="center"
+                    android:text="CHERRY WINTER SALADS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myImageViewText8"
+                    android:layout_width="350dp"
+                    android:layout_height="104dp"
+                    android:layout_alignBottom="@+id/myImageViewText7"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="false"
+                    android:gravity="center"
+                    android:text="FOR DREARY DAYS"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myImageViewText9"
+                    android:layout_width="350dp"
+                    android:layout_height="64dp"
+                    android:layout_alignBottom="@+id/myImageViewText8"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="A collection of recipes"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/myImageViewText10"
+                    android:layout_width="350dp"
+                    android:layout_height="46dp"
+                    android:layout_alignBottom="@+id/myImageViewText9"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="for the week ending"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="12sp" />
+            </RelativeLayout>
         </LinearLayout>
 
     </TableRow>
