@@ -38,7 +38,7 @@
         android:maxHeight="190dp"
 
         android:scaleType="fitXY"
-        android:src="@drawable/Ellipse2"
+        android:src="@drawable/ellipse2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
