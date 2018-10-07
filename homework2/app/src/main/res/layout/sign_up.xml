@@ -7,15 +7,15 @@
     android:layout_height="match_parent"
     android:background="#211c32">
 
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="162dp"
+        android:layout_height="171dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
 
-        android:layout_marginEnd="8dp"
-        android:adjustViewBounds="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:maxWidth="190dp"
         android:maxHeight="190dp"
         android:scaleType="fitXY"
@@ -42,11 +42,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_border_text_2"
+        android:drawableLeft="@drawable/mail_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="left|center"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:text="Email"
+        android:textColor="#FFA7AAAB"
+        android:textSize="14sp"
+        android:transformPivotX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_border_square"
+        android:drawableLeft="@drawable/user_icon"
+        android:ems="10"
+        android:gravity="left|center"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="Username"
+        android:textColor="#FFA7AAAB"
+        android:textSize="14sp"
+        android:transformPivotX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+    <EditText
+        android:id="@+id/editPassword"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_border_square"
+        android:drawableLeft="@drawable/lock_icon"
+        android:drawablePadding="20dp"
+
+
+        android:gravity="left|center"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="Password"
+        android:textColor="#FFA7AAAB"
+        android:textSize="14sp"
+        android:transformPivotX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserName" />
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="176dp"
         android:layout_height="191dp"
-        android:layout_above="@id/sign_up"
+
         android:layout_alignParentStart="true"
 
 
@@ -81,6 +149,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
@@ -160,93 +229,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <GridLayout
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sign_up_rectangle_border"
-        android:numColumns="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_rowWeight="1"
-            android:orientation="horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mail_icon"
-            android:layout_weight="1"
-
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="#70767c"
-            android:layout_weight="5"
-            android:text="Email"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mail_icon"
-                android:layout_weight="1"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#70767c"
-                android:layout_weight="5"
-                android:text="Email"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mail_icon"
-                android:layout_weight="1"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#70767c"
-                android:layout_weight="5"
-                android:text="Email"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mail_icon"
-                android:layout_weight="1"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#70767c"
-                android:layout_weight="5"
-                android:text="Email"/>
-        </LinearLayout>
-
-    </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
